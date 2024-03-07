@@ -1,0 +1,25 @@
+<html><body>
+上传文件的例子<BR>
+<form method="post" enctype="multipart/form-data">
+<strong>文件:</strong><input type='file' name='fileUpload' id='fileField' /><input type='submit' name='submitButton' id='button' value='提交文件' />
+</form>
+<%
+	local rt=io.getUpload()
+	if(rt!=null)
+	{
+		local store_name="upload"+"_"+rt.fileUpload.uploadname;
+		rt.fileUpload.writeFile("root/"+store_name);
+		
+	}
+	local item;
+	local filelist=getdir("root");
+	foreach(item in filelist) 
+	{
+		if(item.len()>6 && item.slice(0,6)=="upload")
+		{
+			local htmlstr="<a href='"+item+"'>"+item+"</a><br>"
+			io.write(htmlstr);
+		}
+	}
+%>
+</body></html>

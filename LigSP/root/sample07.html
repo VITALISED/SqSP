@@ -1,0 +1,17 @@
+<%
+function compute(var,session,io) //第一个参数是HTML端传递来的数据
+{
+	local val=var.CP1.tointeger()+var.CP2.tointeger();
+	io.ajaxValue("CP3",val); //Ajax改变HTML元素的值
+}
+%>
+<html><body>
+服务器端计算(AJAX)<BR>
+
+<!--template CPT()-->
+<input type="text" name="CP1" value="1" $id={CP1}> + <input type="text" name="CP2" value="1" $id={CP2}> = <input type="text" name="CP3" value="2" id="CP3"}><BR>
+<!--end template-->
+
+$@CPT()
+<input type="button" name="button" id="button" value="计算" onclick="server.call('compute',getCPT())">
+</body></html>

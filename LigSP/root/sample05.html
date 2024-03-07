@@ -1,0 +1,13 @@
+<html><body>
+
+<!--template test(x,y)-->
+POST VALUE : <input name=$!x value=$!y ><br>
+<!--end template-->
+
+<form id="form1" name="form1" method="get" action="">
+<input type="text" name="TESTSQ" id="TESTSQ" />
+<input type="submit" name="button" id="button" value="SUBMIT" />
+</form>
+
+<%local postVal=io.get("TESTSQ");if(postVal!=null) do_test("test",postVal,session,io);%>
+</body></html>

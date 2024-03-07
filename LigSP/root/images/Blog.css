@@ -1,0 +1,307 @@
+/*
+Blog Style Overrides
+*/
+
+#Common
+{
+}
+
+/*
+Blog Styles
+*/
+
+UL.BlogPostList
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.BlogPostArea
+{
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+	border-style: solid;
+	border-width: 0px;
+	border-bottom-width: 1px;
+	border-color: #eeeeee;
+}
+
+.BlogPostHeader
+{
+	color: #666666;
+	font-size: 150%;
+	font-weight: normal;
+	font-family: Tahoma, Arial, Helvetica;
+	padding: 4px;
+	padding-top: 0px;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.BlogRating
+{
+	width: 80px;
+	height: 80px;
+	margin: 5px 10px 0px 0px;
+	background-color: #cccccc;
+	vertical-align: top;
+	text-align: center;
+	padding: 8px 2px 2px 2px; 
+	font-family: Tahoma, Arial, Helvetica;
+	background-image: url(../images/Common/blog_comment_background.gif);
+	line-height: 20px;
+	color: #666666;
+}
+
+.BlogRating a:link, .BlogRating a:visited, .BlogRating a:active, .BlogRating a:hover
+{
+	color: #666666;
+	text-decoration: none;
+}
+
+.BlogCommentCount
+{
+	font-size: 22px;
+	font-weight: bold;
+	font-family: Tahoma, Arial, Helvetica;
+}
+
+.BlogPostContent
+{
+	color: #000000;
+	font-family: Tahoma, Arial, Helvetica;
+	margin-left: 1px;
+	font-size: 100%;
+	line-height: 20px;
+	text-align: justify;
+}
+
+.BlogPostFooter
+{
+	margin: 10px 0px 10px 1px;
+	color: #666666;
+	font-family: Tahoma, Arial, Helvetica;
+	font-size: 80%;
+}
+
+/*
+Blog List Columns
+*/
+
+.BlogBlogNameColumn
+{
+	width: 25%;
+}
+
+.BlogAuthorColumn
+{
+	width: 14%;
+}
+
+.BlogLastPostColumn
+{
+	width: 25%;
+}
+
+.BlogPostsColumn
+{
+	text-align: center;
+	width: 9%;
+}
+
+.BlogArticlesColumn
+{
+	text-align: center;
+	width: 9%;
+}
+
+.BlogCommentsColumn
+{
+	text-align: center;
+	width: 9%;
+}
+
+.BlogTrackbacksColumn
+{
+	text-align: center;
+	width: 9%;
+}
+
+/*
+Calendar styles
+*/
+
+.BlogCalendar
+{
+	font-size: 90%;
+	width: 100%;
+}
+
+.BlogCalendarTitle
+{
+	text-align: center;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.BlogCalendarNextPrev
+{
+}
+
+.BlogCalendarNextPrev A:LINK, .BlogCalendarNextPrev A:ACTIVE, .BlogCalendarNextPrev A:VISITED
+{
+	text-decoration: none;
+}
+
+.BlogCalendarNextPrev A:HOVER
+{
+	text-decoration: underline;
+}
+
+.BlogCalendarDays
+{
+	font-weight: bold;
+	padding: 2px;
+}
+
+.BlogCalendarDay A:LINK, .BlogCalendarDay A:ACTIVE, .BlogCalendarDay A:VISITED, .BlogCalendarDay A:HOVER
+{
+	font-weight: bold;
+}
+
+/* Comment Form */
+#commentform {padding: 0;font-size: 0.95em;}
+#commentform h2{margin-bottom:0;}
+#commentform h3{
+    font-size: 1.3em;margin: 0px 10px 0px 0px;padding: 10px 0px 5px;
+	font-family: helvetica, arial, sans-serif;
+	font-weight: 600;letter-spacing: 0px;}
+
+#commentform p{	padding: 0em; font-size: 0.95em;}
+
+#commentform dl {margin: 0;	padding: 0;}
+
+#commentform dt {	padding: 5px 0 5px 0; font-size: 1.0em;	margin: 0px;}
+	
+#commentform dd { color: #777777;margin-left:0;}
+
+#commentform dt em {font-size: 0.95em;}
+ 
+#commentform .smallbox {
+	width: 350px;
+	padding: 2px;
+	border-top: 1px solid #7F8D3E;
+	border-right: 1px solid #E2E3D1;
+	border-bottom: 1px solid #E2E3D1;
+	border-left: 1px solid #E2E3D1;
+}
+
+#commentform textarea {
+	width: 500px;
+	height: 150px;
+	padding: 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-top: 1px solid #7F8D3E;
+	border-right: 1px solid #E2E3D1;
+	border-bottom: 1px solid #E2E3D1;
+	border-left: 1px solid #E2E3D1;
+	font-size: 1em;
+	}
+/* End Comment */
+
+#comments h3
+{
+	color: #666666;
+	font-size: 110%;
+}
+
+.Comment
+{
+	padding-bottom: 12px;
+	border-style: solid;
+	border-width: 0px;
+	border-bottom-width: 1px;
+	border-color: #eeeeee;
+	padding-top: 12px;
+}
+
+.CommentAvatar
+{
+	white-space: nowrap;
+}
+
+.CommentAvatar img
+{
+	margin-right: 8px;
+}
+
+.CommentContent
+{
+}
+
+.CommentTitle
+{
+	font-size: 110%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.CommentTitle A:LINK, .CommentTitle A:ACTIVE, .CommentTitle A:VISITED, .CommentTitle A:HOVER
+{
+    color: #91723f;
+}
+
+.CommentText
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.CommentFooter
+{
+	font-size: 80%;
+	color: #999999;
+}
+
+/* Post ToolBar */
+
+#postToolbar
+{
+	width:400px;
+	border:solid 1px #cccccc;
+	padding:6px;
+	background-color: #eeeeee;
+}
+
+#postToolbar .CommonSubTitle
+{
+	margin-bottom:0;
+	padding-bottom:0;
+}
+/* END Post ToolBar */
+
+UL.BlogLinkCategoryLinkList
+{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: square;
+	margin-left: 24px;
+	padding-left: 0px;
+}
+
+UL.BlogLinkCategoryLinkList li
+{
+	padding-top: 4px;
+}
+
+UL.BlogLinkCategoryLinkList li a
+{
+	font-weight: bold;
+}
+
+.BlogLinkCategoryArea
+{
+	padding: 4px;
+}

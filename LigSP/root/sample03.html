@@ -1,0 +1,11 @@
+<html><body>
+
+<!--template test(x,y)-->
+<input name="$!x" value="$!y" ><br>
+<!--end template-->
+
+<%for(local i=0;i<10;++i) { %>
+TEST$!i : $@test(i,"HELLO"+i)
+<%}%>
+
+</body></html> 

@@ -1,0 +1,12 @@
+<%
+global_counter<-0; //设定一个页面全局变量，注意，请求页面的时候，这个语句会被执行，变量会被清零
+function to_input(session,io) //回调函数的格式是固定的，必须是三个参数
+{
+	global_counter++;
+	io.ajaxValue("theCounter",global_counter); //Ajax改变HTML元素的值
+}
+%>
+<html><body>
+<input type="text" name="Counter" value="0" id="theCounter">
+<input type="button" name="button" id="button" value="Ajax" onclick="server.call('to_input')">
+</body></html>

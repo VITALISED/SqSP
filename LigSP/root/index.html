@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<title>Squirrel Server Pages</title>
+<meta name="description" content="squirrel programming language (scripting), Squirrel Server Pages">
+<meta name="keywords" content="squirrel scripting game engine lua python web ">
+<meta name="GENERATOR" content="CommunityServer 2.0 (Build: 60217.2664)">
+<link rel="shortcut icon" type="image/ico" href="http://squirrel-lang.org/favicon.ico">
+
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <script src="images/global.js" type="text/javascript"></script>
+            <style type="text/css"> body { font-size: 84%; } </style>
+            <link rel="stylesheet" href="images/Common.css" type="text/css" media="screen">
+			<link rel="stylesheet" href="images/Blog.css" type="text/css" media="screen">
+			<link rel="stylesheet" href="images/Home.css" type="text/css" media="screen">
+			<link rel="stylesheet" href="images/common_print.css" type="text/css" media="print">
+			<link rel="stylesheet" href="images/blog_print.css" type="text/css" media="print">
+			<link rel="stylesheet" href="images/home_print.css" type="text/css" media="print">
+        </head><body>
+
+		
+				<div id="Common">
+					<div id="CommonHeader">
+						
+<div class="CommonTitleBar">
+	<div class="CommonTitleBarImage">
+	<table border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			<td class="CommonTitleBarImage"><img src="images/title.gif" border="0">
+			</td>
+			<td class="CommonTitleBarTitleArea" nowrap="true" width="100%">
+				<h1 class="CommonTitleBarTitle">Squirrel</h1>
+				<p class="CommonTitleBarTitle">Server Pages</p>
+				<div class="CommonTitleBarDescription"></div>
+			</td>
+			<td class="CommonTitleBarTitle" nowrap="true">使用Squirrel语言的Web开发工具</td>
+		</tr>
+	</tbody></table>
+	</div>
+</div>
+<div class="CommonTabBar">
+	
+	
+
+<script language="javascript">
+function tabOver(e)
+{
+	if (e.className!='CommonSimpleTabStripSelectedTab')
+		e.className='CommonSimpleTabStripTabHover';
+}
+function tabOut(e)
+{
+	if (e.className!='CommonSimpleTabStripSelectedTab')
+		e.className='CommonSimpleTabStripTab';
+}
+</script>
+
+		<div class="CommonTabBarInner">
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr valign="middle">
+	
+		<td class="CommonSimpleTabStripSelectedTab" onmouseover="tabOver(this);" onmouseout="tabOut(this);"><a href="http://squirrel-lang.org/">Home</a></td>
+	
+		<td class="CommonSimpleTabStripTab" onmouseover="tabOver(this);" onmouseout="tabOut(this);"><a href="http://squirrel-lang.org/forums/default.aspx">Forums</a></td>
+	
+		</tr>
+		</tbody></table>
+		</div>
+	
+
+</div>
+					</div>
+
+					<div id="CommonBody">
+						<table id="CommonBodyTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody><tr>
+								<td id="CommonLeftColumn" valign="top">
+									
+								</td>
+								
+								<td width="100%" valign="top" bgcolor="#CCCCCC" id="CommonBodyColumn">
+									
+		<div class="CommonContentArea">
+			<div class="CommonContent">
+			
+			<span id="_ctl0__ctl0_bcr_linksid"><b><font face="Helvetica"><a href="#overview"><span style="font-size: 11pt;">概述</span></a></font><font face="Helvetica" size="2"> <span style="font-size: 11pt;">- </span></font><font face="Helvetica"><a href="#look"><span style="font-size: 11pt;">这是一个什么样的技术</span></a></font><font face="Helvetica" size="2"><a href="#look"><span style="font-size: 11pt;">?</span> </a></font><font face="Helvetica" size="2"> <span style="font-size: 11pt;">- </span></font><font face="Helvetica"><a href="#work"><span style="font-size: 11pt;">工作进展</span></a></font><font face="Helvetica" size="2"> <span style="font-size: 11pt;">- </span></font><font face="Helvetica"><a href="#doc"><span style="font-size: 11pt;">文档</span></a></font><font face="Helvetica" size="2"> <span style="font-size: 11pt;">- </span></font><font face="Helvetica"><a href="#download"><span style="font-size: 11pt;">下载</span></a></font><font face="Helvetica" size="2"> <span style="font-size: 11pt;">- </span></font><font face="Helvetica"><a href="#mailinglist"><span style="font-size: 11pt;">问题和反馈</span></a></font><font face="Helvetica" size="2"> <span style="font-size: 11pt;">&nbsp; - </span><a href="http://wiki.squirrel-lang.org/"><span style="font-size: 11pt;">Wiki</span> </a><span style="font-size: 11pt;">- </span></font><font face="Helvetica"><a href="http://www.squirrel-lang.org/Forums"><span style="font-size: 11pt;">论坛</span></a></font><font face="Helvetica" size="2"> <span style="font-size: 11pt;">- </span></font><font face="Helvetica"><a href="#author"><span style="font-size: 11pt;">作者</span></a></font><font face="Helvetica" size="2"> -</font> </b></span>
+
+			<h3 id="overview"><span><font face="Helvetica">概述</font></span></h3>
+			
+<p class="CommonContent"> Squirrel 是一种动态语言，它与著名的Lua语言类似，但语法跟接近于C++/Java。Squirrel Server Page是一种快速Web开发工具，它使用Squirrel语言作为Web端执行语言，就像ASP使用VB，JSP使用Java一样。这个开发工具起源于我很久以前的一个设想，但一直没有找到一个较好的脚本语言，直到我发现Squirrel。做出Squirrel Server Page花费了我一年的业余时间，希望这个工具能够有用。</p>
+<p class="CommonContent">这个页面抄袭了Squirrel的主页，如果要了解Squirrel语言，请先访问Squirrel语言的主页 <a href="http://squirrel-lang.org/">http://squirrel-lang.org/</a>。</p>
+<p class="CommonContent">关于软件开发，我的思想可能也有点“山寨”，我反对一切以“软件工程”名义进行的软件结构复杂化。简单来说，我是J2EE之类复杂软件架构的坚决反对者，所以，凡是J2EE提倡的，就是这个工具反对的，凡J2EE反对的，就是这个工具提倡的。</p>
+<p class="CommonContent">也就是说，这个工具不涉及到任何三层架构、XML、依赖注入、MVC等东西，它遵从最简单化的原则。这个工具没有什么配置文件，也没有什么XSLT之类的东西，但它拥有一个HTML模板机制，这与PHP的模板引擎有些类似，但是更为直接和灵活。</p>
+<p class="CommonContent">&nbsp;</p>
+<span>
+<p></p></span>
+				<center><hr width="70%"></center>
+				<span id="_ctl0__ctl0_bcr_lookid">
+<h3 id="look">这是一个什么样的技术?</h3>
+<p>快速Web开发离不开“模仿”，将被模仿的页面作为模板，通过脚本语言的替换操作，完成后台的业务逻辑过程，这是目前各种HTML模板库(包括PHP的各种模板引擎)发展的原因。如果模板功能与脚本语言进行整合，让脚本直接操作模板，这将是一个进步，这个工具设计的目的就在于此。</p>
+<p>另外一个问题是Ajax，这个技术已经高度发展了，但是并没有形成事实上的标准，我个人比较喜欢Json，以Json取代XML发展Ajax是更为有意义的事情，所以这个工具中我加入了JsonRequest异步访问的支持，可以用这个功能完成所需要的一切Ajax。</p>
+<p>第三个问题是性能，抛弃不必要的fork，以单一进程（或者若干并发进程）持续响应用户请求是大势所趋，所以PHP也FastCGI了；这个工具天然支持FastCGI，为了方便调试，我把自己写的WebServer也加入了这个工具，这个工具可以以FastCGI方式连接到任何WebServer，也可以独立运行（我个人比较欣赏Nginx，这个工具在Nginx上工作得很好）。</p>
+<p>第四个问题是数据库，PHP发迹的原因不就是能够快速使用MySQL吗，所以，这个工具提供了内置的Sqlite数据库，用脚本操作这个数据库应该比PHP简单。虽然Sqlite数据库在并发性能上并不优秀，但单数据记录文件，无需配置等特性都是很可爱的。</p>
+<p>第五个问题是跨平台问题，Squirrel语言本身是跨平台的，这个工具也是跨平台的，实际上，这个项目的大部分代码是在VCExpress上编写和调试的，但目前看来，在Linux和FreeBSD上能够更为高效和稳定的运行。</p>
+<p>&nbsp;</p>
+				</span><span id="_ctl0__ctl0_bcr_devstateid"></span>
+				<center><hr width="70%"></center>
+				<span id="_ctl0__ctl0_bcr_workid">
+<h3 id="work">工作进展</h3>
+<p>目前这个工具仅仅在实验阶段，我欢迎一切建议和需求。</p>
+<p>目前工具主要有以下特性：</p>
+<p class="BlogCommentCount"><strong>1：实现了在HTML中模板，并可以嵌入Squirrel代码。</strong></p>
+				</span>
+				<p><span>				  </span></p>
+				<hr />
+				<p>
+				  <span>
+				    </span>&lt;html&gt;&lt;body&gt;</p>
+				<p>&lt;%for(local i=0;i&lt;10;++i) { %&gt;<br />
+				  Hello,World!&lt;br&gt;<br />
+			    &lt;%}%&gt;</p>
+				<p>&lt;/body&gt;&lt;/html&gt;</p>
+				<span>
+<p><a href="sample01.hnut">Sample01.hnut</a></p>
+<p>这个页面将产生一个包括10行Hello world!的HTML页面，在这个工具中，Squirrel的代码可以直接控制页面的内容</p>
+                </span>
+				<hr />
+				<span>
+				<p>我们也可以将Squirrel变量的值放入到页面中</p>
+				</span><span>
+<p>&lt;html&gt;&lt;body&gt;</p>
+                </span>
+                <p>&lt;%for(local i=0;i&lt;10;++i) { %&gt;<br />
+                  $!i : Hello,World!&lt;br&gt;<br />
+                  &lt;%}%&gt;</p>
+                <p>&lt;/body&gt;&lt;/html&gt;</p>
+<p><a href="sample02.hnut">Sample02.hnut</a></p>
+                <span>
+<p>这个页面仍然将产生一个包括10行Hello world!的HTML页面，但是通过Squirrel变量加入了行号。</p>
+</span>
+                <hr />
+                <span>
+<p>我们可以在HTML中使用模板，模板能够通过变量进行自由的迭代变化</p>
+<p>&lt;html&gt;&lt;body&gt;</p>
+                </span>
+                <p>&lt;!--template test(x,y)--&gt;<br />
+                  &lt;input name=&quot;$!x&quot; value=&quot;$!y&quot; &gt;&lt;br&gt;<br />
+                  &lt;!--end template--&gt;</p>
+                <p>&lt;%for(local i=0;i&lt;10;++i) { %&gt;<br />
+                  TEST$!i : $@test(i,&quot;HELLO&quot;+i)<br />
+                  &lt;%}%&gt;</p>
+                <p>&lt;/body&gt;&lt;/html&gt; </p>
+                <span>                </span><span>
+<p><a href="sample03.hnut">Sample03.hnut</a></p>
+</span>
+                <p><span>这个页面将产生一个10行INPUT控件，INPUT是通过模板定义的，并通过模板传递了参数</span></p>
+                <hr />
+                <p>我们也可以使用Squirrel处理GET及POST的数据</p>
+<p>&lt;html&gt;&lt;body&gt;</p>
+<p>&lt;!--template test(x,y)--&gt;<br />
+  POST VALUE : &lt;input name=$!x value=$!y &gt;&lt;br&gt;<br />
+  &lt;!--end template!--&gt;</p>
+<p>&lt;form id=&quot;form1&quot; name=&quot;form1&quot; method=&quot;post&quot; action=&quot;&quot;&gt;<br />
+  &lt;input type=&quot;text&quot; name=&quot;TESTSQ&quot; id=&quot;TESTSQ&quot; /&gt;<br />
+  &lt;input type=&quot;submit&quot; name=&quot;button&quot; id=&quot;button&quot; value=&quot;SUBMIT&quot; /&gt;<br />
+  &lt;/form&gt;</p>
+<p>&lt;%local postVal=io.get(&quot;TESTSQ&quot;);if(postVal!=null) do_test(&quot;test&quot;,postVal,session,io);%&gt;</p>
+<p>&lt;/body&gt;&lt;/html&gt;</p>
+<p><a href="sample04.hnut">  Sample04.hnut</a> POST方式; </p>
+<p>&lt;html&gt;&lt;body&gt;</p>
+<p>&lt;!--template test(x,y)--&gt;<br />
+  POST VALUE : &lt;input name=$!x value=$!y &gt;&lt;br&gt;<br />
+  &lt;!--end template--&gt;</p>
+<p>&lt;form id=&quot;form1&quot; name=&quot;form1&quot; method=&quot;get&quot; action=&quot;&quot;&gt;<br />
+  &lt;input type=&quot;text&quot; name=&quot;TESTSQ&quot; id=&quot;TESTSQ&quot; /&gt;<br />
+  &lt;input type=&quot;submit&quot; name=&quot;button&quot; id=&quot;button&quot; value=&quot;SUBMIT&quot; /&gt;<br />
+  &lt;/form&gt;</p>
+<p>&lt;%local postVal=io.get(&quot;TESTSQ&quot;);if(postVal!=null) do_test(&quot;test&quot;,postVal,session,io);%&gt;<br />
+  &lt;/body&gt;&lt;/html&gt;</p>
+<p><a href="sample05.hnut">Sample05.hnut</a> GET方式;</p>
+                <hr />
+                <p>上传文件可以通过以下方式实现</p>
+                <p>&lt;html&gt;&lt;body&gt;<br />
+                  上传文件的例子&lt;BR&gt;<br />
+                  &lt;form method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;<br />
+                  &lt;strong&gt;文件:&lt;/strong&gt;&lt;input type='file' name='fileUpload' id='fileField' /&gt;&lt;input type='submit' name='submitButton' id='button' value='提交文件' /&gt;<br />
+                  &lt;/form&gt;<br />
+                  &lt;%<br />
+local rt=io.getUpload()<br />
+if(rt!=null)<br />
+{<br />
+local store_name=&quot;upload&quot;+&quot;_&quot;+rt.fileUpload.uploadname;<br />
+rt.fileUpload.writeFile(&quot;root/&quot;+store_name);<br />
+ }<br />
+local item;<br />
+local filelist=getdir(&quot;root&quot;);<br />
+foreach(item in filelist) <br />
+{<br />
+if(item.len()&gt;6 &amp;&amp; item.slice(0,6)==&quot;upload&quot;)<br />
+{<br />
+local htmlstr=&quot;&lt;a href='&quot;+item+&quot;'&gt;&quot;+item+&quot;&lt;/a&gt;&lt;br&gt;&quot;<br />
+io.write(htmlstr);<br />
+}<br />
+}<br />
+%&gt;<br />
+&lt;/body&gt;&lt;/html&gt;</p>
+<p><a href="sample08.hnut">Sample08.hnut</a></p>
+                <hr />
+                <p>&nbsp;</p>
+                <span>
+<p class="BlogCommentCount"><strong>2：实现了JsonRequest，可以通过Ajax的方式，异步提交和获取数据</strong>；也可以通过Ajax在HTML端调用服务器端函数；</p>
+<p class="CommentContent">&lt;%<br />
+  global_counter&lt;-0; //设定一个页面全局变量，注意，请求页面的时候，这个语句会被执行，变量会被清零<br />
+  function to_input(session,io) //回调函数的格式是固定的，必须是三个参数<br />
+  {<br />
+global_counter++;<br />
+io.ajaxValue(&quot;theCounter&quot;,global_counter); //Ajax改变HTML元素的值<br />
+}<br />
+%&gt;<br />
+&lt;html&gt;&lt;body&gt;<br />
+&lt;input type=&quot;text&quot; name=&quot;Counter&quot; value=&quot;0&quot; id=&quot;theCounter&quot;&gt;<br />
+&lt;input type=&quot;button&quot; name=&quot;button&quot; id=&quot;button&quot; value=&quot;Ajax&quot; onclick=&quot;server.call('to_input')&quot;&gt;<br />
+&lt;/body&gt;&lt;/html&gt;</p>
+<p><a href="sample06.hnut">Sample06.hnut</a></p>
+</span>
+                <hr />
+                <span>
+                <p><span>                  </span><span>
+                  </span>&lt;%<br />
+                  function compute(var,session,io) //第一个参数是HTML端传递来的数据<br />
+                  {<br />
+local val=var.CP1.tointeger()+var.CP2.tointeger();<br />
+io.ajaxValue(&quot;CP3&quot;,val); //Ajax改变HTML元素的值<br />
+}<br />
+%&gt;<br />
+&lt;html&gt;&lt;body&gt;<br />
+服务器端计算(AJAX)&lt;BR&gt;</p>
+                </span>
+                <p>&lt;!--template CPT()--&gt;<br />
+                  &lt;input type=&quot;text&quot; name=&quot;CP1&quot; value=&quot;1&quot; $id={CP1}&gt; + &lt;input type=&quot;text&quot; name=&quot;CP2&quot; value=&quot;1&quot; $id={CP2}&gt; = &lt;input type=&quot;text&quot; name=&quot;CP3&quot; value=&quot;2&quot; id=&quot;CP3&quot;}&gt;&lt;BR&gt;<br />
+                  &lt;!--end template--&gt;</p>
+                <p>$@CPT()<br />
+                  &lt;input type=&quot;button&quot; name=&quot;button&quot; id=&quot;button&quot; value=&quot;计算&quot; onclick=&quot;server.call('compute',getCPT())&quot;&gt;<br />
+                  &lt;/body&gt;&lt;/html&gt;</p>
+                <span>
+                <p><a href="sample07.hnut">Sample07.hnut</a></p>
+                </span>                <span>                </span>
+				<center><hr width="70%"></center>
+				<span id="_ctl0__ctl0_bcr_docid">
+<h3 id="doc">文档</h3>
+<h4>&nbsp;</h4></span>
+				<center><hr width="70%"></center>
+				<span id="_ctl0__ctl0_bcr_downloadid">
+<h3 id="download">下载</h3>
+<h4>稳定版本</h4>
+<p>&nbsp;</p></span>
+				<center><hr width="70%"></center>
+				<span id="_ctl0__ctl0_bcr_questionsid">
+		<h3 id="mailinglist">问题及答复</h3>
+		<p>&nbsp;</p>
+		<p>
+		</p>
+</span>
+				<center><hr width="70%"></center>
+				<span id="_ctl0__ctl0_bcr_authorid">
+<h3 id="author">作者</h3>
+<p>本人李钢，目前供职于民航，从事高可靠飞行控制系统软件的维护、测试验证工作；这个工具完全是本人业余时间的产品，于本人的工作无任何关联。</p>
+<p>我的联系方式：steel_de_lee@163.com，lig@tedc.cn<a href="http://www.demichelis.net/"></a></p>
+				</span>
+			</div>
+			</div>
+
+			<div class="CommonContent">
+	
+<div class="CommonInlineMessageArea">
+	<h4 class="CommonInlineMessageTitle">&nbsp;</h4>
+	<div class="CommonInlineMessageContent"></div>
+</div>
+              
+				
+			</div>
+		
+		
+								</td>
+								
+								<td id="CommonRightColumn" valign="top">
+									
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+				
+					<div id="CommonFooter"></div>
+				</div>
+			
+		<script language="javascript" type="text/javascript">
+<!--
+function KeyDownHandler_ctl0__ctl0_bhcr_t___TitleBarSearchButton(event)
+{
+	if (event.keyCode == 13)
+	{
+		event.returnValue = false;
+		event.cancel = true;
+     __doPostBack('_ctl0:_ctl0:bhcr:t:_:TitleBarSearchButton','')	}
+}
+
+//-->
+</script>
+
+
+</form>
+	</body></html>

@@ -1,0 +1,63 @@
+/*
+Home Style Overrides
+*/
+
+.CommonTitle
+{
+	padding-left: 0px;
+}
+
+.CommonContent
+{
+	line-height: 20px;
+}
+
+/*
+Home Styles
+*/
+
+UL.HomeVersionList
+{
+	list-style-type: none;
+	margin: 0px;
+	margin-left: 16px;
+	padding: 0px;
+}
+
+UL.HomeVersionList LI
+{
+	margin-top: 12px;
+}
+
+.HomeSidebarLicenseHeader
+{
+	color: #000000;
+	font-size: 140%;
+	font-weight: bold;
+	font-family: Tahoma, Arial, Helvetica;
+	padding: 4px;
+	padding-left: 0px;
+	margin: 0px;	
+}
+
+.HomeSidebarLicenseArea
+{
+	padding-bottom: 4px;
+	margin-bottom: 8px;
+	
+	
+	
+	
+}
+
+.HomeSidebarCSDownloadHeader
+{
+	color: #000000;
+	font-size: 100%;
+	font-weight: bold;
+	font-family: Tahoma, Arial, Helvetica;
+	padding: 4px;
+	padding-left: 0px;
+	margin: 0px;	
+	margin-top: 8px;
+}
